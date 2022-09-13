@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#title {
+    margin-top: 3rem;
+}
+
+#mainDiv {
+    margin-top: 2rem;
+}
+
+#wiki_text {
+    animation-name: fade-in, slide-up, grow;
+    animation-duration: 1s;
+}
+
+#search_button {
+    background-color: #282828;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@keyframes grow {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: translateY(1);
+    }
+}
